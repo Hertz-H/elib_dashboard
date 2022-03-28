@@ -2,8 +2,8 @@
 namespace coding\app\controllers;
 class AuthorController{
     
-    public static  function show(){
-        require_once("app/views/app-publisher-list.php");
+   public static  function show(){
+        require_once("app/views/app-author-list.php");
 
     }
     public static  function add(){

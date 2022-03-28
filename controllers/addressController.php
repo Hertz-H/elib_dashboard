@@ -3,16 +3,16 @@ namespace coding\app\controllers;
 class AddressController{
     
     public static  function show(){
-        require_once("app/views/app-publisher-list.php");
+        require_once("app/views/app-address-list.php");
 
     }
     public static  function add(){
-        require_once("app/views/app-city-add.php");
+        require_once("app/views/app-address-add.php");
 
     }
 
     public static  function edit(){
-        require_once("app/views/app-city-edit.php");
+        require_once("app/views/app-address-edit.php");
 
     }
 }

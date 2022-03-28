@@ -15,31 +15,20 @@ class UsersController{
         require_once("app/views/signup.php");
 
     }
+ 
     public static  function add(){
-        require_once("app/views/app-publisher-add.php");
+        require_once("app/views/app-user-add.php");
 
     }
 
     public static  function edit(){
-        require_once("app/views/app-publisher-edit.php");
+        require_once("app/views/app-user-edit.php");
 
     }
-    public static  function add_pay(){
-        require_once("app/views/app-paymentMethod-add.php");
+    public static  function  show(){
+        require_once("app/views/app-user-list.php");
 
     }
-
-    public static  function edit_pay(){
-        require_once("app/views/app-paymentMethod-edit.php");
-
-    }
-    public static  function  add_cat(){
-        require_once("app/views/app-category-add.php");
-
-    }
-    public static  function  edit_cat(){
-        require_once("app/views/app-category-edit.php");
-
-    }
+    
 }
 ?>

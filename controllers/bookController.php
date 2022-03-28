@@ -3,7 +3,7 @@ namespace coding\app\controllers;
 class BookController{
     
     public static  function show(){
-        require_once("app/views/app-publisher-list.php");
+        require_once("app/views/app-book-list.php");
 
     }
     public static  function add(){

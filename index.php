@@ -7,28 +7,50 @@ use coding\app\controllers\{CategoryController,PaymentMethodController,AuthorCon
 // use coding\app\controllers\HomeController;
 $system=new AppSystem;
 
-Router::get('/edit_publisher',[PublisherController::class,'edit']);//fill the array with the function and the path 
-Router::get('/list_publishers',[PublisherController::class,'list']);//fill the array with the function and the path
-Router::get('/add_publisher',[PublisherController::class,'add']);
+
 Router::get('/add_order',[OrderController::class,'add']);
 Router::get('/edit_order',[OrderController::class,'edit']);
-Router::get('/add_book',[BookController::class,'add']);
-Router::get('/edit_book',[BookController::class,'edit']);
+Router::get('/list_order',[OrderController::class,'show']);
+
+
+
+
+
 Router::get('/add_author',[AuthorController::class,'add']);
 Router::get('/edit_author',[AuthorController::class,'edit']);
+Router::get('/list_author',[AuthorController::class,'show']);
+
 Router::get('/add_offer',[OfferController::class,'add']);
 Router::get('/edit_offer',[OfferController::class,'edit']);
+Router::get('/list_offer',[OfferController::class,'show']);
+
 Router::get('/add_city',[CityController::class,'add']);
 Router::get('/edit_city',[CityController::class,'edit']);
+Router::get('/list_city',[CityController::class,'show']);
+
 Router::get('/add_address',[AddressController::class,'add']);
 Router::get('/edit_address',[AddressController::class,'edit']);
-Router::get('/add_payment',[PaymentMethodController::class,'add']);//fill the array with the function and the path 
-Router::get('/edit_payment',[PaymentMethodController::class,'edit']);//fill the array with the function and the path 
-Router::get('/add_cat',[CategoryController::class,'add']);//fill the array with the function and the path 
-Router::get('/edit_cat',[CategoryController::class,'edit']);//fill the array with the function and the path 
+Router::get('/list_address',[AddressController::class,'show']);
 
-// Router::get('/list_puyment',[UsersController::class,'list_pay']);//fill the array with the function and the path 
+Router::get('/add_payment',[PaymentMethodController::class,'add']);
+Router::get('/edit_payment',[PaymentMethodController::class,'edit']);
+Router::get('/list_payment',[PaymentMethodController::class,'show']);
 
+Router::get('/add_cat',[CategoryController::class,'add']);
+Router::get('/edit_cat',[CategoryController::class,'edit']);
+Router::get('/list_cat',[CategoryController::class,'show']);
+
+Router::get('/add_user',[UsersController::class,'add']);
+Router::get('/edit_user',[UsersController::class,'edit']);
+Router::get('/list_user',[UsersController::class,'show']);
+
+Router::get('/edit_publisher',[PublisherController::class,'edit']);//fill the array with the function and the path 
+Router::get('/list_publishers',[PublisherController::class,'show']);//fill the array with the function and the path
+// Router::get('/add_publisher',[PublisherController::class,'add']);
+
+Router::get('/add_book',[BookController::class,'add']);
+Router::get('/edit_book',[BookController::class,'edit']);
+// Router::get('/list_book',[BookController::class,'show']);
 // Router::get('/add_publisher',[PublisherController::class,'add']);//fill the array with the function and the path 
 // Router::get('/add_publisher',[PublisherController::class,'edit']);//fill the array with the function and the path 
 // Router::get('/add_publisher',[PublisherController::class,'show']);//fill the array with the function and the path 

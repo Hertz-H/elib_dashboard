@@ -1,8 +1,8 @@
 <?php
 namespace coding\app\controllers;
 class CategoryController {
-    public static function load(){
-          require_once("app/views/order.php");
+    public static function show(){
+          require_once("app/views/app-category-list.php");
         // echo "from home ";
         }
         public static  function  add(){
